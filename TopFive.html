@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Top Five LL</title>
+
+    <style>
+        .parallax {
+            background-image: url(images/library.jpeg);
+            min-height: 300px;
+            background-attachment: fixed;
+        }
+
+        /* Responsive Images */
+
+        .img-fluid {
+            max-width: 75%;
+            max-height: 75%;
+        }
+
+        /* Fluid Text */
+
+        @media (max-width: 550px) {
+            p {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            p {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            p {
+                font-size: 24px;
+            }
+        }
+
+        /* Gallery scroller */
+
+        .scrolling-wrapper {
+            overflow-x: auto;
+        }
+
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'system-ui';
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 3.4em;
+        }
+
+        .card-block {
+            height: 250;
+            background-color: #fff;
+            border: none;
+            background-position: center;
+            background-size: cover;
+            transition: all 0.2s ease-in-out !important;
+            border-radius: 24px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--NavBar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Little Library Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Locations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item bg-danger text-white" href="#card-1">Library 1</a>
+                        <a class="dropdown-item bg-primary text-white" href="#card-2">Library 2</a>
+                        <a class="dropdown-item bg-warning" href="#card-3">Library 3</a>
+                        <a class="dropdown-item bg-success text-white" href="#card-4">Library 4</a>
+                        <a class="dropdown-item bg-dark text-white" href="#card-5">Library 5</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#footer">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--JumboTron-->
+
+    <div class="jumbotron">
+        <div class="parallax">
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h4 style="text-align: center;">
+            5 Little Free Libraries of Athens, Ohio
+        </h4> <br>
+        <h6 style="text-align: center;"></h6> <p>Little Free Libraries dot many communities across the nation- specifically those who recognize the need for free literature that is available to absolutely anyone, anytime.</p><p>Below you can find some of my favorite library boxes that can be found in my home town of Athens, Ohio</p>
+    </div>
+    <br>
+
+    <!--Card-1-->
+
+    <div id=card-1 class="container">
+
+        <div class="card">
+            <div class="card-header bg-danger mb-3">
+                <h4 class="card-title text-white">The Mount Zion Church Library</h4>
+                <p class="card-text text-white">Mount Zion Baptist Church Preservation Society, 32 W Carpenter St,
+                    Athens, OH 45701</p>
+            </div>
+            <div class="card-body">
+                <div class="scrolling-wrapper row flex-row flex-nowrap pb-4 ">
+
+                    <div class="col-8">
+                        <div class="card card-block"> <img src="images/LL_Pics/loompa.png"></div>
+                    </div>
+                    <div class="col-8">
+                        <div class="card card-block"> <img src="images/LL_Pics/doo.png"></div>
+                    </div>
+                    <div class="col-8">
+                        <div class="card card-block"> <img src="images/LL_Pics/doopity.png"></div>
+                    </div>
+                </div>
+
+                <!--MapBox-1-->
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <p>Mount Zion Baptist Church Preservation Project : "Mount Zion Baptist Church Preservation
+                                Society is a 501(c)3 non-profit organization dedicated to restoring the Mount Zion
+                                Baptist Church into a vibrant community center."</p>
+                            <p>This library was nearly empty. It must be a popular spot among curious college readers!
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <div id="map"></div>
+                            <iframe width='100%' height='250px'
+                                src="https://api.mapbox.com/styles/v1/ag084614/ckvfwoa0u0zln14mls6ugp5br.html?title=false&access_token=pk.eyJ1IjoiYWcwODQ2MTQiLCJhIjoiY2t1cHRwZnY3NG94OTJ3bWE1NzRobXlyMSJ9.SYXcxXAYiVGnxP4TrQBuvA&zoomwheel=false#13.72/39.33071/-82.09744"
+                                title="Basic" style="border: thin;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!--Card-2-->
+
+    <div class="container">
+
+        <div id=card-2 class="card">
+            <div class="card-header bg-primary mb-3">
+                <h4 class="card-title text-white">North Congress Street Library</h4>
+                <p class="card-text text-white">158 N Congress St, Athens, OH 45701</p>
+            </div>
+            <div class="card-body">
+                <div class="scrolling-wrapper row flex-row flex-nowrap pb-4 ">
+
+                    <div class="col-8">
+                        <div class="card card-block"> <img src="images/LL_Pics/new.png"></div>
+                    </div>
+                    <div class="col-8">
+                        <div class="card card-block"> <img src="images/LL_Pics/inside.png"></div>
+                    </div>
+                </div>
+
+                <!--MapBox-2-->
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <p>The North Congress Street Free Library is not easy to find. You'll spot it along the side
+                                of the sidewalk up a hill, right at the end of a paved driveway surrounded by nice brick
+                                walls.</p>
+                            <p>This library was filled to the brim with a few best sellers and a lot of self-help books!
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <div id="map"></div>
+                            <iframe width='100%' height='250px'
+                                src="https://api.mapbox.com/styles/v1/ag084614/ckvfwoa0u0zln14mls6ugp5br.html?title=false&access_token=pk.eyJ1IjoiYWcwODQ2MTQiLCJhIjoiY2t1cHRwZnY3NG94OTJ3bWE1NzRobXlyMSJ9.SYXcxXAYiVGnxP4TrQBuvA&zoomwheel=false#13.72/39.33071/-82.09744"
+                                title="Basic" style="border: thin;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!--Card-3-->
+
+    <div id=card-3 class="container">
+
+        <div class="card">
+            <div class="card-header bg-warning mb-3">
+                <h4 class="card-title text-black">S May Avenue Library</h4>
+                <p class="card-text text-black">28 S May Ave, Athens, OH 45701</p>
+            </div>
+            <div class="card-body">
+                <div class="scrolling-wrapper row flex-row flex-nowrap pb-4 ">
+
+                    <div class="col-8">
+                        <div class="card card-block"> <img src="images/LL_Pics/speedway.png"></div>
+                    </div>
+                    <div class="col-8">
+                        <div class="card card-block"> <img src="images/LL_Pics/peepee.png"></div>
+                    </div>
+                </div>
+
+                <!--MapBox-3-->
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <p>You can find this little library near the Speedway Gas station, hidden comfortably
+                                between rose bushes and palm trees in a very well manicured garden.</p>
+                            <p> South May's library has a smaller form-factor than most. I noticed a few pulp fiction
+                                books and romance novelas.
+                            </p>
+                        </div>
+
+                        <div class="col-sm">
+                            <div id="map"></div>
+                            <iframe width='100%' height='250px'
+                                src="https://api.mapbox.com/styles/v1/ag084614/ckvfwoa0u0zln14mls6ugp5br.html?title=false&access_token=pk.eyJ1IjoiYWcwODQ2MTQiLCJhIjoiY2t1cHRwZnY3NG94OTJ3bWE1NzRobXlyMSJ9.SYXcxXAYiVGnxP4TrQBuvA&zoomwheel=false#13.72/39.33071/-82.09744"
+                                title="Basic" style="border: thin;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!--Card-4-->
+
+    <div id=card-4 class="container">
+
+        <div class="card">
+            <div class="card-header bg-success mb-3">
+                <h4 class="card-title text-white">Elmood Place Library</h4>
+                <p class="card-text text-white">85 Elmwood Pl, Athens, OH 45701</p>
+            </div>
+            <div class="card-body">
+                <div class="scrolling-wrapper row flex-row flex-nowrap pb-4 ">
+
+                    <div class="col-8">
+                        <div class="card card-block"> <img src="images/LL_Pics/another.png"></div>
+                    </div>
+                    <div class="col-8">
+                        <div class="card card-block"> <img src="images/LL_Pics/quickly.png"></div>
+                    </div>
+                    <div class="col-8">
+                        <div class="card card-block"> <img src="images/LL_Pics/ahhh.png"></div>
+                    </div>
+                </div>
+
+                <!--MapBox-4-->
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <p>This humble little box of books hides on Elmood place, inside the same neighborhood as
+                                our last library.</p>
+                            <p>The selection of books here was amazing. A lot of diversity; instructional handbooks,
+                                romance, drama. Even some best sellers. If you're looking for a worth while read on a
+                                non-existant budget, check here first!</p>
+                        </div>
+
+                        <div class="col-sm">
+                            <div id="map"></div>
+                            <iframe width='100%' height='250px'
+                                src="https://api.mapbox.com/styles/v1/ag084614/ckvfwoa0u0zln14mls6ugp5br.html?title=false&access_token=pk.eyJ1IjoiYWcwODQ2MTQiLCJhIjoiY2t1cHRwZnY3NG94OTJ3bWE1NzRobXlyMSJ9.SYXcxXAYiVGnxP4TrQBuvA&zoomwheel=false#13.72/39.33071/-82.09744"
+                                title="Basic" style="border: thin;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!--Card-5-->
+
+    <div id=card-5 class="container">
+
+        <div class="card">
+            <div class="card-header bg-dark mb-3">
+                <h4 class="card-title text-white">The Farmacy Library</h4>
+                <p class="card-text text-white">28 W Stimson Ave, Athens, OH 45701</p>
+            </div>
+            <div class="card-body">
+                <div class="scrolling-wrapper row flex-row flex-nowrap pb-4 ">
+
+                    <div class="col-8">
+                        <div class="card card-block"> <img src="images/LL_Pics/farm.png"></div>
+                    </div>
+                    <div class="col-8">
+                        <div class="card card-block"> <img src="images/LL_Pics/stacked.png"></div>
+                    </div>
+                </div>
+
+                <!--MapBox-5-->
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <p>Amid renovations and street work on Stimson Avenue, The Farmacy's little library hides
+                                under the awning close to their exit. This box has been relocated, and isn't in the best
+                                condition as of October 2021.</p>
+                            <p>As you can see in my images, there are very few books left here. None of them were in the
+                                best condition either, and reflects this interstitial state of the library.</p>
+                        </div>
+
+                        <div class="col-sm">
+                            <div id="map"></div>
+                            <iframe width='100%' height='250px'
+                                src="https://api.mapbox.com/styles/v1/ag084614/ckvfwoa0u0zln14mls6ugp5br.html?title=false&access_token=pk.eyJ1IjoiYWcwODQ2MTQiLCJhIjoiY2t1cHRwZnY3NG94OTJ3bWE1NzRobXlyMSJ9.SYXcxXAYiVGnxP4TrQBuvA&zoomwheel=false#13.72/39.33071/-82.09744"
+                                title="Basic" style="border: thin;"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!--Footer-->
+
+    <div id=footer class="card text-center">
+        <div class="card-body text-muted">
+            <h5 class="card-title">About Little Free Libraries</h5>
+            <h7 class="card-text">Did you know Little Free Library is a nonprofit organization with more than
+                100,000
+                little libraries worldwide? <br>
+                Learn how that tiny library you’ve seen in your neighborhood is part of a global book-sharing
+                movement—and you can join!<br>Anyone can start a little library for their community.</h7>
+            <br><br>
+            <a href="https://woub.org/2018/10/01/three-little-free-libraries-help-the-athens-community/"
+                class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="card-footer text-muted">
+            Property of Alexander Graham © 2021
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
